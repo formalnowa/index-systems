@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реквизиты — INDEX Systems</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#F1F0ED;--ink:#181818;--muted:#8C8983;--line:#D6D3CC;
+    --accent:#5E6AD2;--accent-soft:#E7E9FB;
+  }
+  html{font-size:16px;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);color:var(--ink);
+    font-size:15px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* Header */
+  .site-header{
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    position:sticky;top:0;background:var(--bg);z-index:10;
+  }
+  .wrap{max-width:1280px;margin:0 auto;padding:0 40px;}
+  @media(max-width:760px){.wrap{padding:0 20px;}}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;}
+  .logo{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;font-size:13px;letter-spacing:0.08em;
+    text-transform:uppercase;color:var(--ink);text-decoration:none;
+  }
+  .back-link{
+    font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;
+    font-weight:600;color:var(--muted);
+    display:inline-flex;align-items:center;gap:8px;
+    transition:color .2s;
+  }
+  .back-link:hover{color:var(--ink);text-decoration:none;}
+  .back-link::before{content:'←';font-size:14px;}
+
+  /* Main content */
+  .doc-wrap{
+    max-width:720px;
+    margin:60px auto 80px;
+    padding:0 40px;
+  }
+  @media(max-width:760px){
+    .doc-wrap{margin:40px auto 60px;padding:0 20px;}
+  }
+
+  .doc-meta{
+    font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:12px;
+  }
+  .doc-title{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(24px,4vw,38px);
+    font-weight:700;line-height:1.1;
+    margin-bottom:40px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--line);
+  }
+
+  /* Document body typography */
+  .doc-body h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(16px,2vw,20px);
+    font-weight:700;
+    margin:36px 0 12px;
+    color:var(--ink);
+  }
+  .doc-body h3{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:15px;font-weight:600;
+    margin:24px 0 10px;color:var(--ink);
+  }
+  .doc-body p{
+    margin-bottom:14px;
+    color:#2A2A2A;
+  }
+  .doc-body ul{
+    list-style:none;
+    margin:10px 0 18px 0;
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .doc-body ul li{
+    padding-left:18px;position:relative;color:#2A2A2A;
+  }
+  .doc-body ul li::before{
+    content:'—';position:absolute;left:0;color:var(--muted);
+  }
+  .doc-body strong{font-weight:600;color:var(--ink);}
+  .doc-body a{color:var(--accent);}
+
+  /* Requisites table-style block */
+  .req-block{
+    background:#FFFFFF;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:28px 32px;
+    margin:24px 0;
+  }
+  .req-block p{margin-bottom:8px;}
+  .req-block strong{color:var(--ink);}
+
+  /* Back button bottom */
+  .back-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-top:48px;
+    border:1px solid var(--ink);border-radius:999px;
+    padding:12px 24px;
+    font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;
+    color:var(--ink);
+    transition:background .2s,color .2s;
+  }
+  .back-btn:hover{background:var(--ink);color:var(--bg);text-decoration:none;}
+
+  /* Footer */
+  .site-footer{
+    border-top:1px solid var(--line);
+    padding:24px 0;
+    font-size:12px;color:var(--muted);
+    letter-spacing:0.04em;
+  }
+  .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+      <a href="/" class="logo">INDEX SYSTEMS</a>
+      <a href="/" class="back-link">Вернуться на сайт</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="doc-wrap">
+    <div class="doc-meta">Актуально на: 18 июня 2026 года</div>
+    <h1 class="doc-title">Реквизиты</h1>
+    <div class="doc-body">
+      <div class="req-block">
+        <p><strong>Индивидуальный предприниматель Формальнова Софья Ивановна</strong></p>
+        <p>ИНН: 773015224884</p>
+        <p>ОГРНИП: 321774600160976</p>
+        <p>E-mail: <a href="mailto:ask@index-systems.ru">ask@index-systems.ru</a></p>
+        <p>Сайт: <a href="https://index-systems.ru/">https://index-systems.ru</a></p>
+      </div>
+      <p>По вопросам сотрудничества и обработки персональных данных:</p>
+      <p><a href="mailto:ask@index-systems.ru">ask@index-systems.ru</a></p>
+    </div>
+    <a href="/" class="back-btn">← Вернуться на сайт</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <span>© 2026 INDEX Systems</span>
+      <span>ИП Формальнова Софья Ивановна · ИНН 773015224884</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

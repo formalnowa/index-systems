@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика использования файлов cookie — INDEX Systems</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#F1F0ED;--ink:#181818;--muted:#8C8983;--line:#D6D3CC;
+    --accent:#5E6AD2;--accent-soft:#E7E9FB;
+  }
+  html{font-size:16px;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);color:var(--ink);
+    font-size:15px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* Header */
+  .site-header{
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    position:sticky;top:0;background:var(--bg);z-index:10;
+  }
+  .wrap{max-width:1280px;margin:0 auto;padding:0 40px;}
+  @media(max-width:760px){.wrap{padding:0 20px;}}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;}
+  .logo{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;font-size:13px;letter-spacing:0.08em;
+    text-transform:uppercase;color:var(--ink);text-decoration:none;
+  }
+  .back-link{
+    font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;
+    font-weight:600;color:var(--muted);
+    display:inline-flex;align-items:center;gap:8px;
+    transition:color .2s;
+  }
+  .back-link:hover{color:var(--ink);text-decoration:none;}
+  .back-link::before{content:'←';font-size:14px;}
+
+  /* Main content */
+  .doc-wrap{
+    max-width:720px;
+    margin:60px auto 80px;
+    padding:0 40px;
+  }
+  @media(max-width:760px){
+    .doc-wrap{margin:40px auto 60px;padding:0 20px;}
+  }
+
+  .doc-meta{
+    font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:12px;
+  }
+  .doc-title{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(24px,4vw,38px);
+    font-weight:700;line-height:1.1;
+    margin-bottom:40px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--line);
+  }
+
+  /* Document body typography */
+  .doc-body h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(16px,2vw,20px);
+    font-weight:700;
+    margin:36px 0 12px;
+    color:var(--ink);
+  }
+  .doc-body h3{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:15px;font-weight:600;
+    margin:24px 0 10px;color:var(--ink);
+  }
+  .doc-body p{
+    margin-bottom:14px;
+    color:#2A2A2A;
+  }
+  .doc-body ul{
+    list-style:none;
+    margin:10px 0 18px 0;
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .doc-body ul li{
+    padding-left:18px;position:relative;color:#2A2A2A;
+  }
+  .doc-body ul li::before{
+    content:'—';position:absolute;left:0;color:var(--muted);
+  }
+  .doc-body strong{font-weight:600;color:var(--ink);}
+  .doc-body a{color:var(--accent);}
+
+  /* Requisites table-style block */
+  .req-block{
+    background:#FFFFFF;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:28px 32px;
+    margin:24px 0;
+  }
+  .req-block p{margin-bottom:8px;}
+  .req-block strong{color:var(--ink);}
+
+  /* Back button bottom */
+  .back-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-top:48px;
+    border:1px solid var(--ink);border-radius:999px;
+    padding:12px 24px;
+    font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;
+    color:var(--ink);
+    transition:background .2s,color .2s;
+  }
+  .back-btn:hover{background:var(--ink);color:var(--bg);text-decoration:none;}
+
+  /* Footer */
+  .site-footer{
+    border-top:1px solid var(--line);
+    padding:24px 0;
+    font-size:12px;color:var(--muted);
+    letter-spacing:0.04em;
+  }
+  .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+      <a href="/" class="logo">INDEX SYSTEMS</a>
+      <a href="/" class="back-link">Вернуться на сайт</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="doc-wrap">
+    <div class="doc-meta">Дата вступления в силу: 18 июня 2026 года</div>
+    <h1 class="doc-title">Политика использования файлов cookie</h1>
+    <div class="doc-body">
+      <p>Настоящая Политика определяет порядок использования файлов cookie и аналогичных технологий на сайте <a href="https://index-systems.ru/">https://index-systems.ru</a> (далее — «Сайт»).</p>
+      <p>Оператором Сайта является:</p>
+      <div class="req-block">
+        <p><strong>Индивидуальный предприниматель Формальнова Софья Ивановна</strong></p>
+        <p>ИНН: 773015224884</p>
+        <p>ОГРНИП: 321774600160976</p>
+        <p>E-mail: <a href="mailto:ask@index-systems.ru">ask@index-systems.ru</a></p>
+      </div>
+      <p>Используя Сайт, Пользователь соглашается с использованием файлов cookie в соответствии с настоящей Политикой.</p>
+
+      <h2>2. Что такое cookie</h2>
+      <p>Cookie — это небольшие текстовые файлы, которые сохраняются на устройстве Пользователя при посещении сайта. Cookie позволяют:</p>
+      <ul>
+        <li>обеспечивать корректную работу сайта;</li>
+        <li>запоминать настройки пользователя;</li>
+        <li>анализировать посещаемость;</li>
+        <li>оценивать эффективность рекламных кампаний;</li>
+        <li>улучшать пользовательский опыт.</li>
+      </ul>
+
+      <h2>3. Какие cookie используются на Сайте</h2>
+      <h3>Обязательные cookie</h3>
+      <p>Необходимы для корректной работы Сайта и отдельных его функций. Без использования таких cookie работа отдельных разделов сайта может быть ограничена.</p>
+      <h3>Аналитические cookie</h3>
+      <p>Используются для анализа посещаемости и поведения пользователей. На Сайте могут использоваться Яндекс Метрика и инструменты веб-аналитики, интегрированные через сервисы рекламных платформ.</p>
+      <h3>Рекламные и маркетинговые cookie</h3>
+      <p>Используются для оценки эффективности рекламных кампаний. На Сайте могут использоваться: VK Pixel, Яндекс Директ, VK Реклама.</p>
+
+      <h2>4. Какие данные могут собираться автоматически</h2>
+      <ul>
+        <li>IP-адрес;</li>
+        <li>тип устройства;</li>
+        <li>тип браузера;</li>
+        <li>язык браузера;</li>
+        <li>сведения о посещённых страницах;</li>
+        <li>время посещения;</li>
+        <li>источник перехода на Сайт;</li>
+        <li>действия Пользователя на Сайте.</li>
+      </ul>
+      <p>Указанные данные не используются для непосредственной идентификации личности Пользователя.</p>
+
+      <h2>5. Управление cookie</h2>
+      <p>Пользователь вправе самостоятельно управлять использованием cookie через настройки своего браузера. Большинство браузеров позволяют просматривать, удалять, блокировать cookie и ограничивать их использование отдельными сайтами.</p>
+      <p>Следует учитывать, что отключение некоторых cookie может привести к некорректной работе отдельных функций Сайта.</p>
+
+      <h2>6. Используемые сторонние сервисы</h2>
+      <ul>
+        <li>Яндекс Метрика;</li>
+        <li>VK Pixel;</li>
+        <li>Яндекс Директ;</li>
+        <li>VK Реклама;</li>
+        <li>Google Fonts;</li>
+        <li>Vercel;</li>
+        <li>Telegram;</li>
+        <li>Unisender.</li>
+      </ul>
+      <p>Указанные сервисы могут использовать собственные технологии обработки технических данных и файлов cookie в соответствии со своими политиками конфиденциальности.</p>
+
+      <h2>7. Изменение Политики</h2>
+      <p>Оператор вправе вносить изменения в настоящую Политику. Актуальная редакция всегда доступна по адресу: <a href="https://index-systems.ru/cookies.html">https://index-systems.ru/cookies.html</a></p>
+
+      <h2>8. Контактная информация</h2>
+      <div class="req-block">
+        <p><strong>Индивидуальный предприниматель Формальнова Софья Ивановна</strong></p>
+        <p>ИНН: 773015224884</p>
+        <p>ОГРНИП: 321774600160976</p>
+        <p>E-mail: <a href="mailto:ask@index-systems.ru">ask@index-systems.ru</a></p>
+      </div>
+    </div>
+    <a href="/" class="back-btn">← Вернуться на сайт</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <span>© 2026 INDEX Systems</span>
+      <span>ИП Формальнова Софья Ивановна · ИНН 773015224884</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
