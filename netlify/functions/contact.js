@@ -28,13 +28,14 @@ function sanitize(str) {
   return str.trim().slice(0, 1000).replace(/[<>]/g, '');
 }
 
-function buildMessage({ name, phone, comment }) {
+function buildMessage({ name, phone, comment, source }) {
   const lines = [
     '📋 *Новая заявка с сайта INDEX Systems*',
     '',
     `*Имя:* ${name || '—'}`,
     `*Телефон:* ${phone || '—'}`,
     `*Комментарий:* ${comment || '—'}`,
+    `*Источник:* ${source || '—'}`,
   ];
   return lines.join('\n');
 }
@@ -65,6 +66,7 @@ exports.handler = async function (event) {
   const name    = sanitize(body?.name);
   const phone   = sanitize(body?.phone);
   const comment = sanitize(body?.comment);
+  const source  = sanitize(body?.source);
 
   if (!name || !phone) {
     return { statusCode: 422, body: JSON.stringify({ error: 'Name and phone are required' }) };
@@ -72,7 +74,7 @@ exports.handler = async function (event) {
 
   // Отправляем в Telegram
   const telegramUrl = `${TELEGRAM_API}/bot${BOT_TOKEN}/sendMessage`;
-  const message     = buildMessage({ name, phone, comment });
+  const message     = buildMessage({ name, phone, comment, source });
 
   try {
     const tgRes  = await fetch(telegramUrl, {

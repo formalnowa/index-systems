@@ -26,13 +26,14 @@ function sanitize(str) {
 }
 
 // Формат сообщения в Telegram (Markdown V2 не используем — проще plain text)
-function buildMessage({ name, phone, comment }) {
+function buildMessage({ name, phone, comment, source }) {
   const lines = [
     '📋 *Новая заявка с сайта INDEX Systems*',
     '',
     `*Имя:* ${name || '—'}`,
     `*Телефон:* ${phone || '—'}`,
     `*Комментарий:* ${comment || '—'}`,
+    `*Источник:* ${source || '—'}`,
   ];
   return lines.join('\n');
 }
@@ -63,6 +64,7 @@ export default async function handler(req, res) {
   const name    = sanitize(body?.name);
   const phone   = sanitize(body?.phone);
   const comment = sanitize(body?.comment);
+  const source  = sanitize(body?.source);
 
   // Минимальная валидация на сервере
   if (!name || !phone) {
@@ -71,7 +73,7 @@ export default async function handler(req, res) {
 
   // Отправляем в Telegram
   const telegramUrl = `${TELEGRAM_API}/bot${BOT_TOKEN}/sendMessage`;
-  const message     = buildMessage({ name, phone, comment });
+  const message     = buildMessage({ name, phone, comment, source });
 
   try {
     const tgRes = await fetch(telegramUrl, {
