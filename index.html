@@ -2028,6 +2028,8 @@
         form.querySelectorAll('.has-error').forEach(el => el.classList.remove('has-error'));
         form.querySelectorAll('.field-error').forEach(el => el.style.display = 'none');
         submitBtn.textContent = 'Отправлено ✓';
+        // Redirect to thank-you page after a brief confirmation moment
+        setTimeout(() => { window.location.href = '/thanks.html'; }, 900);
 
       } catch (err) {
         // — Error: network failure or server error —
@@ -2191,8 +2193,8 @@
         mForm.reset();
         mForm.querySelectorAll('.has-error').forEach(el => el.classList.remove('has-error'));
         mSubmit.textContent = 'Отправлено ✓';
-        // Auto-close after 2.5s
-        setTimeout(closeModal, 2500);
+        // Redirect to thank-you page after a brief confirmation moment
+        setTimeout(() => { window.location.href = '/thanks.html'; }, 900);
 
       } catch (err) {
         console.error('[modal form]', err);

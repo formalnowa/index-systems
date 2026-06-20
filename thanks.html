@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заявка отправлена – INDEX Systems</title>
+<meta name="description" content="Спасибо за обращение в INDEX Systems. Мы получили вашу заявку и свяжемся с вами в течение рабочего дня.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://index-systems.ru/thanks.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Заявка отправлена – INDEX Systems">
+<meta property="og:description" content="Спасибо за обращение в INDEX Systems. Мы получили вашу заявку и свяжемся с вами в течение рабочего дня.">
+<meta property="og:url" content="https://index-systems.ru/thanks.html">
+<meta property="og:image" content="https://index-systems.ru/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#F1F0ED;--ink:#181818;--muted:#8C8983;--line:#D6D3CC;--accent:#5E6AD2;
+  }
+  html,body{height:100%;}
+  body{
+    font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:24px;
+    position:relative;overflow:hidden;
+  }
+
+  /* background grid, matches site's architectural language */
+  .bg-grid{
+    position:fixed;inset:0;pointer-events:none;opacity:0.5;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 49px, var(--line) 49px, var(--line) 50px),
+      repeating-linear-gradient(90deg, transparent, transparent 49px, var(--line) 49px, var(--line) 50px);
+    -webkit-mask-image:radial-gradient(circle at center, black 0%, transparent 75%);
+            mask-image:radial-gradient(circle at center, black 0%, transparent 75%);
+  }
+
+  .wrap-thanks{max-width:460px;position:relative;z-index:1;}
+
+  /* success icon — accent ring + checkmark, animated draw-in */
+  .success-icon{
+    width:72px;height:72px;margin:0 auto 28px;
+    position:relative;
+  }
+  .success-icon svg{width:100%;height:100%;display:block;}
+  .success-ring{
+    fill:none;stroke:var(--accent);stroke-width:2;
+    stroke-dasharray:220;stroke-dashoffset:220;
+    animation:ring-draw .8s cubic-bezier(.16,1,.3,1) .1s forwards;
+  }
+  .success-check{
+    fill:none;stroke:var(--accent);stroke-width:3;
+    stroke-linecap:round;stroke-linejoin:round;
+    stroke-dasharray:40;stroke-dashoffset:40;
+    animation:check-draw .5s cubic-bezier(.16,1,.3,1) .7s forwards;
+  }
+  .success-dot{
+    fill:var(--accent);opacity:0;
+    animation:dot-pop .3s ease .85s forwards;
+  }
+  @keyframes ring-draw{to{stroke-dashoffset:0;}}
+  @keyframes check-draw{to{stroke-dashoffset:0;}}
+  @keyframes dot-pop{to{opacity:1;}}
+  @media(prefers-reduced-motion:reduce){
+    .success-ring,.success-check{animation:none;stroke-dashoffset:0;}
+    .success-dot{animation:none;opacity:1;}
+  }
+
+  .eyebrow{
+    font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;
+    letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);
+    display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;
+  }
+  .eyebrow::before{content:'';width:16px;height:1px;background:var(--muted);}
+
+  h1{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;
+    font-size:clamp(26px,5vw,38px);line-height:1.15;
+    margin-bottom:14px;color:var(--ink);
+  }
+  .sub{
+    font-size:16px;line-height:1.6;color:#4A4844;
+    margin-bottom:18px;
+  }
+  .extra{
+    font-size:14px;line-height:1.6;color:var(--muted);
+    margin-bottom:36px;
+  }
+  .extra a{color:var(--accent);text-decoration:underline;}
+
+  .back-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    border:1px solid var(--ink);border-radius:999px;
+    padding:15px 30px;
+    font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;
+    color:var(--ink);text-decoration:none;background:none;cursor:pointer;
+    font-family:'Inter',sans-serif;
+    transition:background .25s,color .25s,transform .2s;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .back-btn:hover{background:var(--ink);color:var(--bg);transform:translateY(-1px);}
+  .back-btn:active{outline:none;box-shadow:none;transform:translateY(0);}
+  .back-btn .arrow{transition:transform .25s;}
+  .back-btn:hover .arrow{transform:translateX(-3px);}
+
+  @media(max-width:480px){
+    body{padding:20px;}
+    .success-icon{width:60px;height:60px;margin-bottom:22px;}
+    h1{font-size:clamp(22px,7vw,28px);margin-bottom:12px;}
+    .sub{font-size:14.5px;margin-bottom:14px;}
+    .extra{font-size:13px;margin-bottom:28px;}
+    .back-btn{padding:13px 26px;font-size:11.5px;}
+  }
+</style>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <div class="wrap-thanks">
+    <div class="success-icon" aria-hidden="true">
+      <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+        <circle class="success-ring" cx="36" cy="36" r="33"/>
+        <path class="success-check" d="M22 37 L31 46 L50 26"/>
+        <circle class="success-dot" cx="62" cy="14" r="3"/>
+      </svg>
+    </div>
+
+    <div class="eyebrow">INDEX Systems</div>
+    <h1>Заявка отправлена</h1>
+    <p class="sub">Спасибо. Мы получили ваше сообщение и свяжемся с вами в течение рабочего дня.</p>
+    <p class="extra">Если вопрос срочный, вы можете написать нам на <a href="mailto:ask@index-systems.ru">ask@index-systems.ru</a>.</p>
+
+    <a href="/" class="back-btn"><span class="arrow">←</span> Вернуться на сайт</a>
+  </div>
+</body>
+</html>
